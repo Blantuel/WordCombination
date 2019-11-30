@@ -1,0 +1,122 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(452,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (Test.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  main.cpp
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\Xfit\file\File.h(34,19): warning C4100: '_other': 참조되지 않은 정식 매개 변수입니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\Xfit\file\File.h(35,30): warning C4100: '_other': 참조되지 않은 정식 매개 변수입니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\Xfit\file\File.h(113,1): warning C4267: '+=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\Xfit\file\File.h(115,13): warning C4018: '>': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\Xfit\math\Rect.h(52,36): warning C4100: 'y': 참조되지 않은 정식 매개 변수입니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\Xfit\math\Rect.h(140,1): warning C4244: '+=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\Xfit\math\Rect.h(141,1): warning C4244: '+=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\Xfit\math\Rect.h(142,1): warning C4244: '+=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\Xfit\math\Rect.h(143,1): warning C4244: '+=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\Xfit\math\Rect.h(147,1): warning C4244: '-=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\Xfit\math\Rect.h(148,1): warning C4244: '+=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\Xfit\math\Rect.h(149,1): warning C4244: '+=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\Xfit\math\Rect.h(150,1): warning C4244: '-=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\Xfit\math\Rect.h(156,1): warning C4244: '+=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\Xfit\math\Rect.h(157,1): warning C4244: '-=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\Xfit\math\Rect.h(158,1): warning C4244: '+=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\Xfit\math\Rect.h(159,1): warning C4244: '-=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\Xfit\math\Rect.h(153,35): warning C4100: 'y': 참조되지 않은 정식 매개 변수입니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\Xfit\component\Button.h(29,49): warning C4100: '_data': 참조되지 않은 정식 매개 변수입니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\Xfit\component\Button.h(29,32): warning C4100: '_mousePos': 참조되지 않은 정식 매개 변수입니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\Xfit\component\Button.h(30,49): warning C4100: '_data': 참조되지 않은 정식 매개 변수입니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\Xfit\component\Button.h(30,32): warning C4100: '_mousePos': 참조되지 않은 정식 매개 변수입니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\Xfit\component\Button.h(31,47): warning C4100: '_data': 참조되지 않은 정식 매개 변수입니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\Xfit\component\Button.h(31,30): warning C4100: '_mousePos': 참조되지 않은 정식 매개 변수입니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\Xfit\component\Button.h(32,48): warning C4100: '_data': 참조되지 않은 정식 매개 변수입니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\Xfit\component\Button.h(32,31): warning C4100: '_mousePos': 참조되지 않은 정식 매개 변수입니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\Xfit\math\Point3Dw.h(35,14): warning C4244: 'return': 'double'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\Xfit\math\Point3Dw.h(118,23): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\Xfit\math\Point3Dw.h(182,45): warning C4100: 'point': 참조되지 않은 정식 매개 변수입니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\Xfit\math\Point3Dw.h(198,40): warning C4100: 'point': 참조되지 않은 정식 매개 변수입니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\Xfit\math\Point3Dw.h(225,1): warning C4458: 'a' 선언은 클래스 멤버를 숨깁니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\Xfit\math\Point3Dw.h(207,16): message : 'Point3DwF::<unnamed-tag>::a' 선언을 참조하십시오.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\Xfit\math\Point3Dw.h(225,1): warning C4458: 'b' 선언은 클래스 멤버를 숨깁니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\Xfit\math\Point3Dw.h(207,14): message : 'Point3DwF::<unnamed-tag>::b' 선언을 참조하십시오.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\Xfit\math\Point3Dw.h(229,1): warning C4458: 'a' 선언은 클래스 멤버를 숨깁니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\Xfit\math\Point3Dw.h(207,16): message : 'Point3DwF::<unnamed-tag>::a' 선언을 참조하십시오.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\Xfit\math\Point3Dw.h(229,1): warning C4458: 'b' 선언은 클래스 멤버를 숨깁니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\Xfit\math\Point3Dw.h(207,14): message : 'Point3DwF::<unnamed-tag>::b' 선언을 참조하십시오.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\Xfit\math\Point3Dw.h(452,41): warning C4100: '_z': 참조되지 않은 정식 매개 변수입니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\main.cpp(124,21): warning C4311: '형식 캐스트': 'void *'에서 'int'(으)로 포인터가 잘립니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\main.cpp(124,21): warning C4302: '형식 캐스트': 'void *'에서 'int'(으)로 잘립니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\main.cpp(122,41): warning C4100: '_mousePos': 참조되지 않은 정식 매개 변수입니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\main.cpp(122,26): warning C4100: '_target': 참조되지 않은 정식 매개 변수입니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\main.cpp(163,21): warning C4311: '형식 캐스트': 'void *'에서 'int'(으)로 포인터가 잘립니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\main.cpp(163,21): warning C4302: '형식 캐스트': 'void *'에서 'int'(으)로 잘립니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\main.cpp(161,44): warning C4100: '_mousePos': 참조되지 않은 정식 매개 변수입니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\main.cpp(161,29): warning C4100: '_target': 참조되지 않은 정식 매개 변수입니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\main.cpp(197,128): warning C4244: '인수': 'unsigned int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\main.cpp(197,82): warning C4244: '인수': 'unsigned int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\main.cpp(181,60): warning C4100: '_data': 참조되지 않은 정식 매개 변수입니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\main.cpp(181,43): warning C4100: '_mousePos': 참조되지 않은 정식 매개 변수입니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\main.cpp(181,28): warning C4100: '_target': 참조되지 않은 정식 매개 변수입니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\main.cpp(221,40): warning C4459: 'file' 선언은 전역 선언을 숨깁니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\main.cpp(36,13): message : 'file' 선언을 참조하십시오.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\main.cpp(468,38): warning C4312: '형식 캐스트': 'int'에서 더 큰 'void *'(으)로의 변환입니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\main.cpp(469,41): warning C4312: '형식 캐스트': 'int'에서 더 큰 'void *'(으)로의 변환입니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\main.cpp(586,154): warning C4244: '인수': 'unsigned int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\main.cpp(586,100): warning C4244: '인수': 'unsigned int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\main.cpp(595,54): warning C4267: '초기화 중': 'size_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\main.cpp(602,20): warning C4389: '!=': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\main.cpp(611,152): warning C4244: '인수': 'unsigned int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\main.cpp(611,98): warning C4244: '인수': 'unsigned int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\main.cpp(559,26): warning C4100: '_data': 참조되지 않은 정식 매개 변수입니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\main.cpp(560,7): warning C4189: 'requireDraw': 지역 변수가 초기화되었으나 참조되지 않았습니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\main.cpp(653,28): warning C4100: '_data': 참조되지 않은 정식 매개 변수입니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\main.cpp(669,22): warning C4100: '_data': 참조되지 않은 정식 매개 변수입니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\List.h(349,1): warning C4267: '인수': 'size_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\List.h(347): message : 클래스 템플릿 멤버 함수 'void List<DefaultNode>::BuildNodes(unsigned int)'을(를) 컴파일하는 중입니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\main.cpp(461): message : 컴파일되는 함수 템플릿 인스턴스화 'void List<DefaultNode>::BuildNodes(unsigned int)'에 대한 참조를 확인하세요.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\main.cpp(152): message : 컴파일되는 클래스 템플릿 인스턴스화 'List<DefaultNode>'에 대한 참조를 확인하세요.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\chrono(669): message : 컴파일되는 클래스 템플릿 인스턴스화 'std::chrono::duration<double,std::ratio<1,1>>'에 대한 참조를 확인하세요.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\chrono(177): message : 컴파일되는 클래스 템플릿 인스턴스화 'std::chrono::duration<__int64,std::nano>'에 대한 참조를 확인하세요.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\chrono(647): message : 컴파일되는 클래스 템플릿 인스턴스화 'std::chrono::time_point<std::chrono::steady_clock,std::chrono::steady_clock::duration>'에 대한 참조를 확인하세요.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\List.h(332,1): warning C4267: '초기화 중': 'size_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\List.h(331): message : 클래스 템플릿 멤버 함수 'void List<DefaultNode>::UpdateNodes(void)'을(를) 컴파일하는 중입니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\main.cpp(156): message : 컴파일되는 함수 템플릿 인스턴스화 'void List<DefaultNode>::UpdateNodes(void)'에 대한 참조를 확인하세요.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\List.h(332,1): warning C4267: '초기화 중': 'size_t'에서 'const unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\List.h(334,1): warning C4267: '인수': 'size_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\List.h(335,1): warning C4267: '인수': 'size_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\List.h(319,1): warning C4267: '인수': 'size_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\List.h(301): message : 클래스 템플릿 멤버 함수 'void List<DefaultNode>::Size(void)'을(를) 컴파일하는 중입니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\main.cpp(675): message : 컴파일되는 함수 템플릿 인스턴스화 'void List<DefaultNode>::Size(void)'에 대한 참조를 확인하세요.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\List.h(257,1): warning C4456: 'rect' 선언은 이전 로컬 선언을 숨깁니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\List.h(247,15): message : 'rect' 선언을 참조하십시오.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\List.h(244): message : 클래스 템플릿 멤버 함수 'bool List<DefaultNode>::Update(void)'을(를) 컴파일하는 중입니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\main.cpp(623): message : 컴파일되는 함수 템플릿 인스턴스화 'bool List<DefaultNode>::Update(void)'에 대한 참조를 확인하세요.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\List.h(267,1): warning C4456: 'rect' 선언은 이전 로컬 선언을 숨깁니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\List.h(247,15): message : 'rect' 선언을 참조하십시오.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\List.h(232,1): warning C4458: 'size' 선언은 클래스 멤버를 숨깁니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\List.h(35,9): message : 'List<DefaultNode>::size' 선언을 참조하십시오.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\List.h(228): message : 클래스 템플릿 멤버 함수 'void List<DefaultNode>::Draw(void)'을(를) 컴파일하는 중입니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\main.cpp(638): message : 컴파일되는 함수 템플릿 인스턴스화 'void List<DefaultNode>::Draw(void)'에 대한 참조를 확인하세요.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\List.h(232,1): warning C4267: '초기화 중': 'size_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\List.h(232,12): warning C4189: 'size': 지역 변수가 초기화되었으나 참조되지 않았습니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\List.h(219,1): warning C4267: '=': 'size_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\List.h(218): message : 클래스 템플릿 멤버 함수 'void List<DefaultNode>::PrepareDraw(unsigned int,unsigned int)'을(를) 컴파일하는 중입니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\List.h(319): message : 컴파일되는 함수 템플릿 인스턴스화 'void List<DefaultNode>::PrepareDraw(unsigned int,unsigned int)'에 대한 참조를 확인하세요.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\List.h(108,36): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\List.h(106): message : 클래스 템플릿 멤버 함수 'void List<DefaultNode>::Scroll(int,bool)'을(를) 컴파일하는 중입니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\List.h(251): message : 컴파일되는 함수 템플릿 인스턴스화 'void List<DefaultNode>::Scroll(int,bool)'에 대한 참조를 확인하세요.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\List.h(111,1): warning C4267: '인수': 'size_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\List.h(112,1): warning C4267: '인수': 'size_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\List.h(114,1): warning C4267: '인수': 'size_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\List.h(126,1): warning C4267: '초기화 중': 'size_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\List.h(126,1): warning C4267: '초기화 중': 'size_t'에서 'const unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\List.h(129,1): warning C4267: '인수': 'size_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\List.h(130,1): warning C4267: '인수': 'size_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\List.h(133,1): warning C4267: '인수': 'size_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\List.h(146,1): warning C4267: '인수': 'size_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\List.h(147,1): warning C4267: '인수': 'size_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\List.h(150,1): warning C4267: '인수': 'size_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\List.h(154,1): warning C4267: '인수': 'size_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\List.h(155,1): warning C4267: '인수': 'size_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\List.h(158,1): warning C4267: '인수': 'size_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\List.h(209,1): warning C4267: '=': 'size_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\List.h(208): message : 클래스 템플릿 멤버 함수 'void List<DefaultNode>::ReleaseDraw(unsigned int,unsigned int)'을(를) 컴파일하는 중입니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\List.h(111): message : 컴파일되는 함수 템플릿 인스턴스화 'void List<DefaultNode>::ReleaseDraw(unsigned int,unsigned int)'에 대한 참조를 확인하세요.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\main.cpp(118): warning C4715: 'SelectVertex2D': 모든 제어 경로에서 값을 반환하지는 않습니다.
+C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\main.h(60): warning C4715: 'WindowRatioPoint': 모든 제어 경로에서 값을 반환하지는 않습니다.
+  WordCombination.vcxproj -> C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\x64\Debug\WordCombination.exe
