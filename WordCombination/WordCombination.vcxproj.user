@@ -2,9 +2,18 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
-    <RemoteDebuggerServerName>COMPUTER:4024</RemoteDebuggerServerName>
+    <RemoteDebuggerServerName>SEONGJUN-PC:4024</RemoteDebuggerServerName>
     <RemoteDebuggerConnection>RemoteWithoutAuthentication</RemoteDebuggerConnection>
-    <RemoteDebuggerCommand>$(TargetDir)\Test.exe</RemoteDebuggerCommand>
-    <RemoteDebuggerWorkingDirectory>$(ProjectDir)</RemoteDebuggerWorkingDirectory>
+    <RemoteDebuggerCommand>C:\Users\SeongJun\Desktop\WordCombination\WordCombination.exe</RemoteDebuggerCommand>
+    <RemoteDebuggerWorkingDirectory>C:\Users\SeongJun\Desktop\WordCombination</RemoteDebuggerWorkingDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <RemoteDebuggerConnection>RemoteWithoutAuthentication</RemoteDebuggerConnection>
+    <DeploymentDirectory>
+    </DeploymentDirectory>
+    <RemoteDebuggerCommand>C:\Users\SeongJun\Desktop\WordCombination\WordCombination.exe</RemoteDebuggerCommand>
+    <RemoteDebuggerServerName>SEONGJUN-PC:4024</RemoteDebuggerServerName>
+    <RemoteDebuggerWorkingDirectory>C:\Users\SeongJun\Desktop\WordCombination</RemoteDebuggerWorkingDirectory>
   </PropertyGroup>
 </Project>
