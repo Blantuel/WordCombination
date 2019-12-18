@@ -116,8 +116,8 @@ C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\
 C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\WordCombination\List.h(111): message : 컴파일되는 함수 템플릿 인스턴스화 'void List<DefaultNode>::ReleaseDraw(unsigned int,unsigned int)'에 대한 참조를 확인하세요.
 LINK : warning LNK4098: 'LIBCMT' defaultlib가 다른 라이브러리와 충돌합니다. /NODEFAULTLIB:library를 사용하십시오.
   코드를 생성하고 있습니다.
-  213 of 2387 functions ( 8.9%) were compiled, the rest were copied from previous compilation.
+  1 of 2387 functions (<0.1%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    44 functions had inline decision re-evaluated but remain unchanged
+    34 functions had inline decision re-evaluated but remain unchanged
   코드를 생성했습니다.
   WordCombination.vcxproj -> C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\x64\Release\WordCombination.exe

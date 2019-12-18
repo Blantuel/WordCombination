@@ -690,7 +690,7 @@ static void Create() {
 	createInfo.windowShow = System::WindowShow::Default;
 
 #ifdef _WIN32
-	createInfo.title = _T("WordCombination v0.02");
+	createInfo.title = _T("WordCombination v0.0.2");
 	createInfo.windowPos.x = System::WindowDefaultPos;
 	createInfo.windowPos.y = System::WindowDefaultPos;
 	createInfo.cursorResource = nullptr;
