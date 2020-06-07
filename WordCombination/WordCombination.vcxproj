@@ -58,11 +58,11 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_WINDOWS;WIN_DESKTOP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>../Xfit;../TextGameMakerBase;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../Xfit;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -82,6 +82,7 @@
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -91,44 +92,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="EditBox.cpp" />
-    <ClCompile Include="FadeLabelButton.cpp" />
-    <ClCompile Include="LabelButton.cpp" />
-    <ClCompile Include="LabelListButton.cpp" />
-    <ClCompile Include="LabelToggleButton.cpp" />
-    <ClCompile Include="LabelImage.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Map.cpp" />
-    <ClCompile Include="Option.cpp" />
-    <ClCompile Include="Place.cpp" />
-    <ClCompile Include="PlaceEvent.cpp" />
-    <ClCompile Include="SizeLabel.cpp" />
-    <ClCompile Include="Slider.cpp" />
-    <ClCompile Include="Title.cpp" />
-    <ClCompile Include="VisualTextBox.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="EditBox.h" />
-    <ClInclude Include="FadeLabelButton.h" />
-    <ClInclude Include="LabelButton.h" />
-    <ClInclude Include="LabelListButton.h" />
-    <ClInclude Include="LabelToggleButton.h" />
-    <ClInclude Include="LabelImage.h" />
     <ClInclude Include="List.h" />
     <ClInclude Include="main.h" />
-    <ClInclude Include="Map.h" />
-    <ClInclude Include="Option.h" />
-    <ClInclude Include="Place.h" />
-    <ClInclude Include="PlaceEvent.h" />
-    <ClInclude Include="SizeLabel.h" />
-    <ClInclude Include="Slider.h" />
-    <ClInclude Include="Title.h" />
-    <ClInclude Include="VisualTextBox.h" />
+    <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Xfit\Xfit.vcxproj">
       <Project>{d78d0ed2-abad-4ea1-83e2-c77569c24198}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

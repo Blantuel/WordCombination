@@ -1,3 +1,0 @@
-﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(452,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (Test.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-LINK : warning LNK4098: 'LIBCMTD' defaultlib가 다른 라이브러리와 충돌합니다. /NODEFAULTLIB:library를 사용하십시오.
-  WordCombination.vcxproj -> C:\Users\lmsd1\OneDrive\문서\Visual Studio 2019\Projects\Xfit\x64\Debug\WordCombination.exe

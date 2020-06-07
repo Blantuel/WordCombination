@@ -3,7 +3,7 @@
 #include <object/Shape.h>
 #include <object/ShapeInstance.h>
 #include <resource/ShapeVertex.h>
-#include "SizeLabel.h"
+#include <text/SizeLabel.h>
 #include <object/Image.h>
 #include "main.h"
 
@@ -12,7 +12,7 @@ public:
 	bool isDraw;
 	SizeLabel* label;
 	DefaultNode() {}
-	DefaultNode(SizeLabel* _label):label(_label),isDraw(false) {}
+	DefaultNode(SizeLabel* _label) :label(_label), isDraw(false) {}
 };
 
 template <typename NodeType = DefaultNode> class List {
@@ -26,7 +26,7 @@ template <typename NodeType = DefaultNode> class List {
 	float nodeHeight;
 	float scrollBarHeight;
 	float scrollBarY;
-	
+
 	float scrollMoveY;
 	float scrollMouseY;
 
@@ -99,7 +99,7 @@ template <typename NodeType = DefaultNode> class List {
 			scrollBarHeight = dt * size.height;
 		}
 		scrollBarY = size.height / 2.f - scrollBarHeight / 2.f - (size.height - scrollBarHeight) * ((float)scrollIndex / (float)(nodes.Size() - nodeShape.nodes.Size()));
-		scrollBar.pos = rectShape.pos + PointF(size.width / 2.f, scrollBarY) * baseScale * WindowRatioPoint(posType);
+		scrollBar.pos = rectShape.pos + PointF(size.width / 2.f, scrollBarY) * baseScale * WindowRatio();
 		scrollBar.scale.y = scrollBarHeight * baseScale.y * WindowRatio();
 		scrollBar.UpdateMatrix();
 	}
@@ -115,7 +115,7 @@ template <typename NodeType = DefaultNode> class List {
 					PrepareDraw(0, scrollIndex);
 				}
 				scrollIndex = 0;
-				if(_setscrollPos)SetScrollBarPos();
+				if (_setscrollPos)SetScrollBarPos();
 			}
 			if (selectIndex != UINT_MAX) {
 				if (selectIndex < nodeShape.nodes.Size())_Select(selectIndex);
@@ -170,25 +170,26 @@ template <typename NodeType = DefaultNode> class List {
 public:
 	Array<NodeType> nodes;
 	unsigned blockNum;
-	PosType posType;
-	
-	
-	List(PosType _posType, PointF _size, float _nodeHeight, PointF _pos, PointF _scale = PointF(1.f, 1.f)) :nodeShape(_pos* WindowRatioPoint(posType), _scale* WindowRatio(), 0, nullptr, System::rectShapeVertex2D),
-		baseScale(_scale), basePos(_pos), posType(_posType), blockNum(0), size(_size), nodeHeight(_nodeHeight), selectIndex(UINT_MAX), scrollIndex(0), selectIndex2(UINT_MAX), scrollBarY(0),scrolling(false),
-		nodeImage(PointF(0.f, 0.f), PointF(1.f, 1.f), 0.f, System::defaultBlend, nullptr, nullptr, leftVertex, System::defaultUV, System::defaultIndex), scrollVisibleTime(0), scrollBarHeight(0),
-		rectShape(_pos* WindowRatioPoint(posType), _size* _scale* WindowRatio(), 0.f, nullptr, System::rectShapeVertex2D, Point3DwF(0.85f, 0.85f, 0.85f, 1.f), Point3DwF(0.f, 0.f, 0.f, 1.f), GetLineWidth()),
-		scrollBar(PointF(0.f, 0.f), PointF(7.f, 1.f)* _scale * WindowRatio(), 0, nullptr, System::rectShapeVertex2D, Point3DwF(0.f, 0.f, 0.f, 1.f), Point3DwF(0.f, 0.f, 0.f, 1.f), 0.f) {
+
+
+	List(PointF _size, float _nodeHeight, PointF _pos, PointF _scale = PointF(1.f, 1.f)) :nodeShape(_pos* WindowRatio(), _scale* WindowRatio(), 0, nullptr, System::rectShapeVertex2D),
+		baseScale(_scale), basePos(_pos),blockNum(0), size(_size), nodeHeight(_nodeHeight), selectIndex(UINT_MAX), scrollIndex(0), selectIndex2(UINT_MAX), scrollBarY(0), scrolling(false),
+		nodeImage(PointF(0.f, 0.f), PointF(1.f, 1.f), 0.f, System::defaultBlend, System::pointSampler, nullptr, ObjectVertex::left, System::defaultUV, System::defaultIndex), scrollVisibleTime(0), scrollBarHeight(0),
+		rectShape(_pos* WindowRatio(), _size* _scale* WindowRatio(), 0.f, nullptr, System::rectShapeVertex2D, Point3DwF(0.85f, 0.85f, 0.85f, 1.f), Point3DwF(0.f, 0.f, 0.f, 1.f), GetLineWidth()),
+		scrollBar(PointF(0.f, 0.f), PointF(7.f, 1.f)* _scale* WindowRatio(), 0, nullptr, System::rectShapeVertex2D, Point3DwF(0.f, 0.f, 0.f, 1.f), Point3DwF(0.f, 0.f, 0.f, 1.f), 0.f) {
 		scrollBar.visible = false;
 	}
 
 	void SetPos(PointF _pos) {
 		basePos = _pos;
-		nodeShape.SetPos(basePos * WindowRatioPoint(posType));
+		nodeShape.pos = basePos * WindowRatio();
+		nodeShape.UpdateMatrix();
 
-		rectShape.SetPos(nodeShape.pos);
+		rectShape.pos = nodeShape.pos;
+		rectShape.UpdateMatrix();
 
-		scrollBar.SetPos(rectShape.pos + PointF(size.width / 2.f, scrollBarY) * baseScale * WindowRatioPoint(posType));
-		PrepareDraw(scrollIndex, nodeShape.nodes.Size());
+		scrollBar.pos = rectShape.pos + PointF(size.width / 2.f, scrollBarY) * baseScale * WindowRatio();
+		scrollBar.UpdateMatrix();
 	}
 	void SetX(float _x) {
 
@@ -205,6 +206,9 @@ public:
 	void SetScaleY(float _scaleY) {
 
 	}
+	PointF GetPos()const {
+		return basePos;
+	}
 	void ReleaseDraw(unsigned _start = 0, unsigned _num = 0) {
 		if (_num == 0)_num = nodes.Size();
 		else _num = _start + _num;
@@ -215,7 +219,7 @@ public:
 			}
 		}
 	}
-	void PrepareDraw(unsigned _start=0, unsigned _num=0) {
+	void PrepareDraw(unsigned _start = 0, unsigned _num = 0) {
 		if (_num == 0)_num = nodes.Size();
 		else _num = _start + _num;
 		for (unsigned i = _start; i < _num; i++) {
@@ -225,15 +229,20 @@ public:
 			}
 		}
 	}
+	RectF GetRect()const {
+		return RectF(rectShape.pos.x - rectShape.scale.width / 2.f, rectShape.pos.x + rectShape.scale.width / 2.f,
+			rectShape.pos.y + rectShape.scale.height / 2.f, rectShape.pos.y - rectShape.scale.height / 2.f);
+	}
+
 	void Draw() {
 		rectShape.Draw();
 		nodeShape.Draw();
 		const float xx = -size.width / 2.f + 10.f + 10.f;
 		unsigned size = nodeShape.nodes.Size();
-		for (unsigned a = 0;a< nodeShape.nodes.Size();a++) {
+		for (unsigned a = 0; a < nodeShape.nodes.Size(); a++) {
 			const unsigned i = a + scrollIndex;
 			nodeImage.frame = nodes[i].label;
-			nodeImage.pos = PixelPerfectPoint((PointF(xx, nodeShape.nodes[a].mat.e[7])+basePos) * WindowRatioPoint(posType), nodes[i].label->GetWidth(), nodes[i].label->GetHeight(), CenterPointPos::Left);
+			nodeImage.pos = PixelPerfectPoint((PointF(xx, nodeShape.nodes[a].mat.e[7]) + basePos) * WindowRatio(), nodes[i].label->GetWidth(), nodes[i].label->GetHeight(), CenterPointPos::Left);
 			nodeImage.scale.x = (float)nodes[i].label->GetWidth();
 			nodeImage.scale.y = (float)nodes[i].label->GetHeight();
 			nodeImage.UpdateMatrix();
@@ -242,10 +251,10 @@ public:
 		scrollBar.Draw();
 	}
 	bool Update() {
-		short scrollingDt = -Input::GetWheelScrolling()/WHEEL_DELTA;
+		short scrollingDt = -Input::GetWheelScrolling() / WHEEL_DELTA;
 		const PointF rectSize = size * baseScale * WindowRatio();
-		const RectF rect(-rectSize.width/2.f + rectShape.pos.x, rectSize.width/2.f + rectShape.pos.x, rectSize.height/2.f + rectShape.pos.y, -rectSize.height/2.f + rectShape.pos.y);
-		const PointF mousePos = Input::GetMousePos();
+		const RectF rect = RectF::MakeRect(basePos.x, basePos.y, rectSize.width, rectSize.height);
+		const PointF mousePos = Input::GetMousePos() * WindowRatio();
 
 		if (rect.IsPointIn(mousePos)) {
 			Scroll(scrollingDt, true);
@@ -284,8 +293,8 @@ public:
 			else if (scrollBar.pos.y + scrollBar.scale.height / 2.f > rectShape.pos.y + rectShape.scale.height / 2.f)
 				scrollBar.pos.y = rectShape.pos.y + rectShape.scale.height / 2.f - scrollBar.scale.height / 2.f;
 
-			const float dt = ((rectShape.pos.y + rectShape.scale.height / 2.f)-(scrollBar.pos.y + scrollBar.scale.height/2.f))/(rectShape.scale.height- scrollBar.scale.height);
-			Scroll((int)(dt * (float)(nodes.Size()-nodeShape.nodes.Size())) - (int)scrollIndex, false);
+			const float dt = ((rectShape.pos.y + rectShape.scale.height / 2.f) - (scrollBar.pos.y + scrollBar.scale.height / 2.f)) / (rectShape.scale.height - scrollBar.scale.height);
+			Scroll((int)(dt * (float)(nodes.Size() - nodeShape.nodes.Size())) - (int)scrollIndex, false);
 
 			scrollBar.UpdateMatrix();
 			scrollVisibleTime = 0;
@@ -301,7 +310,7 @@ public:
 	void Size() {
 		for (auto& i : nodes) i.isDraw = false;
 		nodeShape.scale = baseScale * WindowRatio();
-		nodeShape.pos = basePos * WindowRatioPoint(posType);
+		nodeShape.pos = basePos * WindowRatio();
 		nodeShape.UpdateMatrix();
 		for (auto& i : nodeShape.nodes) {
 			i.lineWidth = GetLineWidth();
@@ -314,7 +323,7 @@ public:
 		rectShape.lineWidth = GetLineWidth();
 
 		scrollBar.scale = PointF(7.f, scrollBarHeight) * nodeShape.scale;
-		scrollBar.pos = rectShape.pos + PointF(size.width / 2.f, scrollBarY) * baseScale * WindowRatioPoint(posType);
+		scrollBar.pos = rectShape.pos + PointF(size.width / 2.f, scrollBarY) * baseScale * WindowRatio();
 		scrollBar.UpdateMatrix();
 		PrepareDraw(scrollIndex, nodeShape.nodes.Size());
 	}
@@ -346,8 +355,11 @@ public:
 
 	void BuildNodes(unsigned _maxNum) {
 		nodeShape.nodes.Alloc(_maxNum);
-		Make(0,nodes.Size());
+		Make(0, nodes.Size());
 		nodeShape.BuildInstance();
+	}
+	void FreeNodes() {
+		nodeShape.nodes.Free();
 	}
 };
 
